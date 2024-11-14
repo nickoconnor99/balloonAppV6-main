@@ -1,22 +1,27 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Products from './pages/Products'
+import { HomeLayout, Landing, Products, SingleProduct } from './pages'
 
 import './App.css'
-import SingleProduct from './pages/SingleProduct'
-import Home from './pages/Home'
-import data from './data'
+
 import SingleProductPage from './pages/SingleProductPage'
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Products></Products>,
+    element: <HomeLayout></HomeLayout>,
+    children: [
+      {
+        path: 'product',
+        element: <Products></Products>,
+      },
+      {
+        path: 'product/:id',
+        element: <SingleProductPage></SingleProductPage>,
+      },
+    ]
   },
-  {
-    path: '/product/:id',
-    element: <SingleProductPage></SingleProductPage>,
-  },
+
 ])
 
 function App() {

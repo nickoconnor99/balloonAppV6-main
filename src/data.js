@@ -5,12 +5,14 @@ const data = [
     {
         id: 1,
         title: 'Elf on the Shelf',
-        image: elf
+        image: elf,
+        price: 100
     },
     {
         id: 2,
         title: 'Winning Team',
-        image: team
+        image: team,
+        price: 200
 
     }
 

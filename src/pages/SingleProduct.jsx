@@ -4,25 +4,29 @@ import { Link } from "react-router-dom"
 const SingleProduct = (props) => {
     const [image, setImage] = useState()
     const [title, setTitle] = useState()
+    const [price, setPrice] = useState()
     useEffect(() => {
         setImage(props.product.image)
         setTitle(props.product.title)
+        setPrice(props.product.price)
     }, [])
 
     return (
         <div>
-            <div className='card-body items-center text-center'>
-                <h2 className='card-title capitalize tracking-wider'>{title}</h2>
+            <div className="text-center font-bold text-lg ">
+                <h2 className='capitalize tracking-wider'>{title}</h2>
             </div>
 
-            <figure className='px-4 pt-4'>
-                <img
+            <figure className='px-8 pt-8'>
+                <img style={{ width: '70%' }}
                     src={image}
                     alt='Elf'
                     className='rounded-xl w-full object-cover'
                 />
             </figure>
-            <Link to='/'>Home</Link>
+            <div className='card-body items-center text-center'>
+                <h2 className='card-title capitalize tracking-wider'>Price: {price}</h2>
+            </div>
         </div>
     )
 }
