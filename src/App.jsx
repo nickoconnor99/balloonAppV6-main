@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { HomeLayout, Landing, Products, SingleProduct } from './pages'
-
 import './App.css'
 
 import SingleProductPage from './pages/SingleProductPage'
@@ -12,7 +11,7 @@ const router = createBrowserRouter([
     element: <HomeLayout></HomeLayout>,
     children: [
       {
-        path: 'product',
+        index: true,
         element: <Products></Products>,
       },
       {

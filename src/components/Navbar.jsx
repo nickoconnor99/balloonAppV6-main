@@ -11,7 +11,7 @@ const Navbar = () => {
                 <div className='navbar-start'>
                     {/* TITLE */}
                     <NavLink
-                        to='/product'
+                        to='/'
                         className='hidden lg:flex text-3xl items-center'
                     >
                         <img style={{

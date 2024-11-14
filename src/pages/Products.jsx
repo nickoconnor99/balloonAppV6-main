@@ -1,11 +1,12 @@
 import data from "../data"
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import SingleProduct from './SingleProduct'
 import { Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-
 const Products = () => {
+    const data2 = useLoaderData()
+    console.log(data2)
     const products = data;
 
     return (
