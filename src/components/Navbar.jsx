@@ -15,7 +15,7 @@ const Navbar = () => {
                         className='hidden lg:flex text-3xl items-center'
                     >
                         <img style={{
-                            width: '40%',
+                            width: '30%',
                         }} src={logo}></img>
                     </NavLink>
                     {/* DROPDOWN */}

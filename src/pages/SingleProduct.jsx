@@ -18,7 +18,7 @@ const SingleProduct = (props) => {
             </div>
 
             <figure className='px-8 pt-8'>
-                <img style={{ width: '70%' }}
+                <img
                     src={image}
                     alt='Elf'
                     className='rounded-xl w-full object-cover'
