@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import hero1 from '../assets/397492507_267421149586508_6988846565487064728_n.jpg'
-import hero2 from '../assets/397526804_263713576623932_2944288645324919698_n.jpg'
-import hero3 from '../assets/20231213_170002.jpg'
-import hero4 from '../assets/istockphoto-1463458517-2048x2048.jpg'
+import hero1 from '../assets/coffee shop.jpg'
+import hero2 from '../assets/hen.jpg'
+import hero3 from '../assets/tina.jpg'
+import hero4 from '../assets/rabbit.jpg'
 const carouselImages = [hero1, hero2, hero3, hero4];
 
 const Hero = () => {
